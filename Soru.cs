@@ -4,26 +4,17 @@ using System.Text;
 
 namespace SinavSistemi
 {
-    class Soru: ISoru
+    public class Soru: ISoru
     {
         public int soruID { get; set; }
-
         public string soruMetni { get; set; }
         public int konuID { get; set; }
         public int uniteID { get; set; }
-
         public string resimYolu { get; set; }
         public string dogruCevap { get; set; }
-
-        public List<string> yanlisCevaplar = new List<string>();
-
-
-
-
-
-
-
-
-
+        public string yanlisCevap1 { get; set; }
+        public string yanlisCevap2 { get; set; }
+        public string yanlisCevap3 { get; set; }
+                      
     }
 }

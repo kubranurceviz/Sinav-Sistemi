@@ -1,44 +1,42 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Text;
 
 namespace SinavSistemi
 {
-    internal class BLL
+    public class BLL
     {
-        VeriTabani veriTabani;
+        KullaniciVeriTabani kullaniciVeriTabani;
+        SoruVeriTabani soruVeriTabani;
+        KonuVeriTabani konuVeriTabani;
+        UniteVeriTabani uniteVeriTabani;
         public BLL()
         {
-            veriTabani = new VeriTabani();
+            kullaniciVeriTabani = new KullaniciVeriTabani();
+            soruVeriTabani = new SoruVeriTabani();
+            konuVeriTabani =new KonuVeriTabani();
+            uniteVeriTabani =new UniteVeriTabani();
+            
         }
-        public int SistemGirisKontrol(string kullaniciAdi, string sifre)
+        public Kullanici SistemGirisKontrol(string kullaniciAdi)
         {
-            if (!string.IsNullOrEmpty(kullaniciAdi) && !string.IsNullOrEmpty(sifre))
-            {
-                return veriTabani.SistemGirisKontrol(new Kullanici()
-                {
-                    kullaniciAdi = kullaniciAdi,
-                    sifre = sifre
-                });
-            }
-            else
-            {
-                return -1;
-            }
+                
+                return kullaniciVeriTabani.SistemGirisKontrol(kullaniciAdi);
 
         }
-        public int KullaniciKayitEKLE(string kullaniciAdi, string ad, string soyAd, string eMailAdresi, string sifre)
+        public int KullaniciKayitEKLE(string kullaniciAdi, string ad, string soyAd, string eMailAdresi, string sifre,int kullaniciTipiID)
         {
 
             if (!string.IsNullOrEmpty(kullaniciAdi) && !string.IsNullOrEmpty(sifre) && !string.IsNullOrEmpty(eMailAdresi))
             {
-                return veriTabani.KullaniciKayitEKLE(new Kullanici()
+                return kullaniciVeriTabani.KullaniciKayitEKLE(new Kullanici()
                 {
                     kullaniciAdi = kullaniciAdi,
                     sifre = sifre,
                     eMailAdresi = eMailAdresi,
                     soyAd = soyAd,
-                    ad = ad
+                    ad = ad,
+                    kullaniciTipiID = kullaniciTipiID,
+                    
                 });
             }
             else
@@ -51,7 +49,7 @@ namespace SinavSistemi
         {
             if (!string.IsNullOrEmpty(eMailAdresi))
             {
-                return veriTabani.KullaniciSifreCekme(new Kullanici()
+                return kullaniciVeriTabani.KullaniciSifreCekme(new Kullanici()
                 {
 
                     eMailAdresi = eMailAdresi,
@@ -64,6 +62,36 @@ namespace SinavSistemi
 
             }
 
+        }
+        public int SoruKayitEkle(int soruID, string soruMetni, int konuID, int uniteID, string resimYolu, string dogruCevap, string yanlisCevap1, string yanlisCevap2, string yanlisCevap3)
+        {
+            return soruVeriTabani.SoruKayitEkle(
+                new Soru()
+                {
+                    soruID = soruID,
+                    soruMetni = soruMetni,
+                    konuID = konuID,
+                    uniteID = uniteID,
+                    resimYolu = resimYolu,
+                    dogruCevap = dogruCevap,
+                    yanlisCevap1 = yanlisCevap1,
+                    yanlisCevap2 = yanlisCevap2,
+                    yanlisCevap3 = yanlisCevap3,
+                }
+                );
+        }
+        public Konu konuBilgiGetir(string konuAdi)
+        {
+            return konuVeriTabani.konuBilgiGetir(konuAdi);
+
+        }
+        public List<Konu> konuListeGetir(int uniteID)
+        {
+            return konuVeriTabani.konuListeGetir(uniteID);
+        }
+        public List<Unite> uniteListeGetir()
+        {
+            return uniteVeriTabani.uniteListeGetir();
         }
 
     }

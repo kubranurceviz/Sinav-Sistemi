@@ -12,7 +12,6 @@ namespace SinavSistemi
 
         List<Soru> test = new List<Soru>();
 
-
         List<string> cevapAnahtari = new List<string>();
     }
 }

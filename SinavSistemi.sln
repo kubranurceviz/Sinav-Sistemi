@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinavSistemi", "SinavSistemi\SinavSistemi.csproj", "{259D1142-DC96-4251-998D-92ABD7307389}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SinavSistemi", "SinavSistemi.csproj", "{45D38842-9EFB-4BE5-B1D6-F285DFB54A91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{259D1142-DC96-4251-998D-92ABD7307389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{259D1142-DC96-4251-998D-92ABD7307389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{259D1142-DC96-4251-998D-92ABD7307389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{259D1142-DC96-4251-998D-92ABD7307389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D38842-9EFB-4BE5-B1D6-F285DFB54A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D38842-9EFB-4BE5-B1D6-F285DFB54A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D38842-9EFB-4BE5-B1D6-F285DFB54A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D38842-9EFB-4BE5-B1D6-F285DFB54A91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8C17D950-727F-4657-9063-72C5E24577CA}
+		SolutionGuid = {B1E63C70-1055-4A9C-9222-3C72636D483A}
 	EndGlobalSection
 EndGlobal
