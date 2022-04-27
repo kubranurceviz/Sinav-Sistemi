@@ -104,8 +104,8 @@
             this.linkLabelSifre.AutoSize = true;
             this.linkLabelSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.linkLabelSifre.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.linkLabelSifre.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.linkLabelSifre.LinkColor = System.Drawing.Color.Black;
+            this.linkLabelSifre.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.linkLabelSifre.LinkColor = System.Drawing.Color.LightSeaGreen;
             this.linkLabelSifre.Location = new System.Drawing.Point(21, 477);
             this.linkLabelSifre.Name = "linkLabelSifre";
             this.linkLabelSifre.Size = new System.Drawing.Size(188, 25);
@@ -121,7 +121,7 @@
             this.buttonGiris.ForeColor = System.Drawing.Color.GreenYellow;
             this.buttonGiris.Location = new System.Drawing.Point(126, 278);
             this.buttonGiris.Name = "buttonGiris";
-            this.buttonGiris.Size = new System.Drawing.Size(182, 50);
+            this.buttonGiris.Size = new System.Drawing.Size(202, 50);
             this.buttonGiris.TabIndex = 3;
             this.buttonGiris.Text = "GİRİŞ YAP";
             this.buttonGiris.UseVisualStyleBackColor = false;
@@ -382,7 +382,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Indigo;
+            this.panel9.BackColor = System.Drawing.Color.Navy;
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.buttonCikis);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;

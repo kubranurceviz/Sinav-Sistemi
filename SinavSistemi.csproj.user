@@ -7,5 +7,14 @@
     <Compile Update="Sifre.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SinavSorumlusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SoruEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SoruListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

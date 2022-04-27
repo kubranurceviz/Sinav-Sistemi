@@ -50,6 +50,9 @@ namespace SinavSistemi
                     case 1:
                         break;
                     case 2:
+                        SinavSorumlusu sinavSorumlusu = new SinavSorumlusu(kullanici);
+                        sinavSorumlusu.Show();
+                        this.Close();
                         break;
                     case 3:
                         break;
@@ -62,6 +65,8 @@ namespace SinavSistemi
 
         private void linkLabelSifre_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Sifre sifre = new Sifre();
+            sifre.Show();
 
         }
 

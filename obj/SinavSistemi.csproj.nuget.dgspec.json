@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\SinavSistemi.csproj": {}
+    "D:\\Sinav-Sistemi\\SinavSistemi.csproj": {}
   },
   "projects": {
-    "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\SinavSistemi.csproj": {
+    "D:\\Sinav-Sistemi\\SinavSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\SinavSistemi.csproj",
+        "projectUniqueName": "D:\\Sinav-Sistemi\\SinavSistemi.csproj",
         "projectName": "SinavSistemi",
-        "projectPath": "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\SinavSistemi.csproj",
+        "projectPath": "D:\\Sinav-Sistemi\\SinavSistemi.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\obj\\",
+        "outputPath": "D:\\Sinav-Sistemi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

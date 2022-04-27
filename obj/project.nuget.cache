@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "drzgJyUgeqXNwT8ZEYM7xfkj6vNIvQpWqXlb01yq9L45nPkwI2rp4yjqwQxE7sS68TIcWY9ptFBBD6ln3tiQnA==",
+  "dgSpecHash": "LVsLpTYdcKVrzQnP/5t8e7VKwbffuaiX3fQDqesNIMyY5cinjVmz1rXuadrQOMpufe9PIaf95AeCK7nSu6JXHQ==",
   "success": true,
-  "projectFilePath": "D:\\Belgeler\\GitHub\\Sinav-Sistemi\\SinavSistemi.csproj",
+  "projectFilePath": "D:\\Sinav-Sistemi\\SinavSistemi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
