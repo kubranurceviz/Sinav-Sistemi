@@ -94,5 +94,17 @@ namespace SinavSistemi
             return uniteVeriTabani.uniteListeGetir();
         }
 
+        public Soru SoruBilgileriniCekme(int soruID)
+        {
+            return soruVeriTabani.SoruBilgileriniCekme(soruID);
+        }
+       public int SoruAdeti()
+        { 
+            return soruVeriTabani.SoruAdeti();
+        }
+        public List<Soru> SoruListesiGetir()
+        { 
+            return soruVeriTabani.SoruListesiGetir();
+        }
     }
 }

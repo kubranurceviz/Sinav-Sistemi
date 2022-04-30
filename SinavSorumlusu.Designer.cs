@@ -64,7 +64,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 657);
+            this.panel1.Size = new System.Drawing.Size(264, 700);
             this.panel1.TabIndex = 1;
             // 
             // buttonCikis
@@ -129,11 +129,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1177, 657);
+            this.ClientSize = new System.Drawing.Size(1190, 700);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "SinavSorumlusu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

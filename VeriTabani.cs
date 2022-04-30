@@ -13,8 +13,8 @@ namespace SinavSistemi
         object donusobj;
 
         public VeriTabani()
-        {                                  //kullanılan database değişecek
-            baglanti = new SqlConnection(@"Data Source=ZBETUL\SQLEXPRESS;Initial Catalog=Deneme;Integrated Security=True");
+        {                                 
+            baglanti = new SqlConnection(@"Data Source=ZBETUL\SQLEXPRESS;Initial Catalog=Sinav_Sistemi;Integrated Security=True");
         }
         public void BaglantiAyarla()
         {
@@ -35,7 +35,7 @@ namespace SinavSistemi
         public SqlDataReader liste(SqlCommand komut)
         {
             komut.Connection = baglanti;
-
+            BaglantiAyarla();
             return komut.ExecuteReader();
         }
 

@@ -16,9 +16,9 @@ namespace SinavSistemi
             public Kullanici SistemGirisKontrol(string kullaniciAdi)
             {
                 data = new Kullanici();
-                komut = new SqlCommand("select * from Kullanici where kullaniciAdi = @kullaniciAdi");
+                komut = new SqlCommand("select * from tblKullanici where kullaniciAdi = @kullaniciAdi");
                 komut.Parameters.AddWithValue("@kullaniciAdi", kullaniciAdi);
-               veriTabani.BaglantiAyarla(); 
+               
                reader=veriTabani.liste(komut); 
              while (reader.Read())
             {
@@ -41,14 +41,14 @@ namespace SinavSistemi
             {
 
 
-                komut = new SqlCommand("Insert into tblKullanici (kullaniciAdi,ad,soyAd,eMailAdresi,sifre,kullaniciTipiID) values (@kullaniciAdi,@ad,@soyAd,@eMmailAdresi,@sifre,@kullaniciTipiID)");
+                komut = new SqlCommand("Insert into tblKullanici (kullaniciAdi,ad,soyAd,eMailAdresi,sifre,kullaniciTipiID) values (@kullaniciAdi,@ad,@soyAd,@eMailAdresi,@sifre,@kullaniciTipiID)");
 
                 komut.Parameters.Add("@kullaniciAdi", SqlDbType.NVarChar).Value = kullanici.kullaniciAdi;
                 komut.Parameters.Add("@ad", SqlDbType.NVarChar).Value = kullanici.ad;
                 komut.Parameters.Add("@soyAd", SqlDbType.NVarChar).Value = kullanici.soyAd;
                 komut.Parameters.Add("@eMailAdresi", SqlDbType.NVarChar).Value = kullanici.eMailAdresi;
                 komut.Parameters.Add("@sifre", SqlDbType.NVarChar).Value = kullanici.sifre;
-                komut.Parameters.Add("@kullaniciTipiID",SqlDbType.Int).Value=kullanici.kullaniciID;
+                komut.Parameters.Add("@kullaniciTipiID",SqlDbType.Int).Value=kullanici.kullaniciTipiID;
 
                 return veriTabani.ekleDuzenleSil(komut);
 
@@ -57,7 +57,7 @@ namespace SinavSistemi
             public string KullaniciSifreCekme(Kullanici kullanici)
             {
                 string deger = string.Empty;
-                komut = new SqlCommand("select * from tblKullanici where eMailAdresi = @eMailAdresi");
+                komut = new SqlCommand("select sifre from tblKullanici where eMailAdresi = @eMailAdresi");
                 komut.Parameters.AddWithValue("@eMailAdresi", kullanici.eMailAdresi);
 
                 deger = (string)veriTabani.kolonGetir(komut);

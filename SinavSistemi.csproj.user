@@ -4,7 +4,13 @@
     <Compile Update="LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="OgrenciAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Sifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SINAV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SinavSorumlusu.cs">

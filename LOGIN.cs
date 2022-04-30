@@ -48,11 +48,15 @@ namespace SinavSistemi
                 switch (kullanici.kullaniciTipiID)
                 {
                     case 1:
+                        OgrenciAnaForm ogrenciAnaForm = new OgrenciAnaForm(kullanici);
+                        ogrenciAnaForm.Show();
+                        this.Hide();
                         break;
                     case 2:
                         SinavSorumlusu sinavSorumlusu = new SinavSorumlusu(kullanici);
                         sinavSorumlusu.Show();
-                        this.Close();
+                        this.Hide();
+                        
                         break;
                     case 3:
                         break;

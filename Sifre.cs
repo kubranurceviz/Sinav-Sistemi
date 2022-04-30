@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SinavSistemi
@@ -25,5 +26,15 @@ namespace SinavSistemi
         {
             this.Close();
         }
+
+ 
+        private void textBoxmail_MouseClick(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            textBox.Text = "";
+            textBox.ForeColor = Color.Black;
+        }
+
+       
     }
 }

@@ -16,7 +16,7 @@ namespace SinavSistemi
         public List<Unite> uniteListeGetir()
         {
             liste = new List<Unite>();
-            komut = new System.Data.SqlClient.SqlCommand("select * from Unite");
+            komut = new System.Data.SqlClient.SqlCommand("select * from tblUnite");
 
             reader = veriTabani.liste(komut);
 

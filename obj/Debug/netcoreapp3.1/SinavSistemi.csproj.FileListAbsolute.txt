@@ -50,3 +50,6 @@ D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.pdb
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.genruntimeconfig.cache
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SinavSorumlusu.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SoruEkle.resources
+D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SoruListele.resources
+D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.OgrenciAnaForm.resources
+D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SINAV.resources

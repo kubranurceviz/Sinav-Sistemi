@@ -53,6 +53,7 @@
             this.textBoxmail.Size = new System.Drawing.Size(254, 28);
             this.textBoxmail.TabIndex = 0;
             this.textBoxmail.Text = "Email Adres";
+            this.textBoxmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxmail_MouseClick);
             // 
             // panel1
             // 
@@ -159,6 +160,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sifre";
             this.Text = "Sifre";
+          
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
