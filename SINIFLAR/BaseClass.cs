@@ -8,7 +8,6 @@ namespace SinavSistemi
         public SqlCommand komut;
         public SqlDataReader reader;
         public int donusdeger;
-        public object obj;
         public List<T> liste;
         public T data;
     }

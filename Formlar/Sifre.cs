@@ -17,9 +17,9 @@ namespace SinavSistemi
         private void buttonGoster_Click(object sender, EventArgs e)
         {
 
-            string sifre=bLL.KullaniciSifreCekme(textBoxmail.Text);
+            Kullanici kullanici=bLL.SistemGirisKontrol(string.Empty,textBoxmail.Text);
             labelSifre.Visible = true;
-            labelSifre.Text = "Şifreniz: " + sifre;
+            labelSifre.Text = "Şifreniz: " + kullanici.sifre;
         }
 
         private void buttoncikis_Click(object sender, EventArgs e)
@@ -35,6 +35,9 @@ namespace SinavSistemi
             textBox.ForeColor = Color.Black;
         }
 
-       
+        private void Sifre_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

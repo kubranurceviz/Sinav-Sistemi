@@ -53,3 +53,4 @@ D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SoruEkle.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SoruListele.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.OgrenciAnaForm.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SINAV.resources
+D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.Formlar.SonucEkran.resources

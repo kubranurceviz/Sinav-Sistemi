@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -41,7 +42,7 @@ namespace SinavSistemi
 
         private void buttonGiris_Click(object sender, EventArgs e)
         {
-            kullanici = bLL.SistemGirisKontrol(textKullaniciAd.Text);
+            kullanici = bLL.SistemGirisKontrol(textKullaniciAd.Text,string.Empty);
 
             if (kullanici.kullaniciAdi == textKullaniciAd.Text && kullanici.sifre == textSifre.Text)
             {
@@ -90,7 +91,16 @@ namespace SinavSistemi
 
             if (sonuc > 0)
             {
+                Kullanici kullanici = bLL.SistemGirisKontrol(textKaydolKullanici.Text,textBoxEmail.Text);
+                if (kullanici.kullaniciTipiID==1)
+                {
+                   
+                        bLL.KullaniciSoruTablo(kullanici.kullaniciID);
+                    
+
+                }
                 MessageBox.Show("Başarılı bir şekilde kaydoldunuz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              
             }
             else
             {
@@ -101,6 +111,11 @@ namespace SinavSistemi
         private void buttonCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void groupBoxGiris_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,31 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OgrenciAnaForm));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelOgrAnaFrm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelSoyad = new System.Windows.Forms.Label();
             this.labelAd = new System.Windows.Forms.Label();
             this.buttonCikis = new System.Windows.Forms.Button();
             this.buttonSonucEkran = new System.Windows.Forms.Button();
             this.buttonBasla = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panelOgrAnaFrm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelOgrAnaFrm
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.labelSoyad);
-            this.panel1.Controls.Add(this.labelAd);
-            this.panel1.Controls.Add(this.buttonCikis);
-            this.panel1.Controls.Add(this.buttonSonucEkran);
-            this.panel1.Controls.Add(this.buttonBasla);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 700);
-            this.panel1.TabIndex = 0;
+            this.panelOgrAnaFrm.Controls.Add(this.pictureBox1);
+            this.panelOgrAnaFrm.Controls.Add(this.labelSoyad);
+            this.panelOgrAnaFrm.Controls.Add(this.labelAd);
+            this.panelOgrAnaFrm.Controls.Add(this.buttonCikis);
+            this.panelOgrAnaFrm.Controls.Add(this.buttonSonucEkran);
+            this.panelOgrAnaFrm.Controls.Add(this.buttonBasla);
+            this.panelOgrAnaFrm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelOgrAnaFrm.Location = new System.Drawing.Point(0, 0);
+            this.panelOgrAnaFrm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panelOgrAnaFrm.Name = "panelOgrAnaFrm";
+            this.panelOgrAnaFrm.Size = new System.Drawing.Size(263, 700);
+            this.panelOgrAnaFrm.TabIndex = 0;
+            this.panelOgrAnaFrm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelOgrAnaFrm_MouseMove);
+      
             // 
             // pictureBox1
             // 
@@ -107,6 +109,7 @@
             this.buttonSonucEkran.TabIndex = 0;
             this.buttonSonucEkran.Text = "Sonuç Ekranı";
             this.buttonSonucEkran.UseVisualStyleBackColor = true;
+            this.buttonSonucEkran.Click += new System.EventHandler(this.buttonSonucEkran_Click);
             // 
             // buttonBasla
             // 
@@ -124,7 +127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 700);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelOgrAnaFrm);
             this.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -132,21 +135,20 @@
             this.Name = "OgrenciAnaForm";
             this.Text = "OgrenciAnaForm";
             this.Load += new System.EventHandler(this.OgrenciAnaForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelOgrAnaFrm.ResumeLayout(false);
+            this.panelOgrAnaFrm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonBasla;
-        private System.Windows.Forms.Button buttonSonucEkran;
         private System.Windows.Forms.Button buttonCikis;
         private System.Windows.Forms.Label labelAd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelSoyad;
+        internal System.Windows.Forms.Button buttonSonucEkran;
+        internal System.Windows.Forms.Panel panelOgrAnaFrm;
     }
 }

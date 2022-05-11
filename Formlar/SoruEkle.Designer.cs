@@ -136,13 +136,14 @@
             // comboBoxKonu
             // 
             this.comboBoxKonu.BackColor = System.Drawing.Color.Orange;
+            this.comboBoxKonu.Enabled = false;
             this.comboBoxKonu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxKonu.FormattingEnabled = true;
             this.comboBoxKonu.Location = new System.Drawing.Point(112, 90);
             this.comboBoxKonu.Name = "comboBoxKonu";
             this.comboBoxKonu.Size = new System.Drawing.Size(193, 30);
             this.comboBoxKonu.TabIndex = 7;
-            this.comboBoxKonu.SelectedIndexChanged += new System.EventHandler(this.comboBoxKonu_SelectedIndexChanged);
+         
             // 
             // label1
             // 

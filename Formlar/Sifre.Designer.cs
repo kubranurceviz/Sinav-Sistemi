@@ -160,7 +160,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sifre";
             this.Text = "Sifre";
-          
+            this.Load += new System.EventHandler(this.Sifre_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

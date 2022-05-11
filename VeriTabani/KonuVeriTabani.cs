@@ -11,12 +11,12 @@ namespace SinavSistemi
             veriTabani = new VeriTabani();
         }
 
-        //Seçilen unitenin konularını veritabanından çekmek
-        public List<Konu> konuListeGetir(int uniteID)
+        // konuları veritabanından çekmek
+        public List<Konu> konuListeGetir()
         {
             liste = new List<Konu>();
-            komut = new System.Data.SqlClient.SqlCommand("select * from tblKonu where uniteID = @uniteID");
-            komut.Parameters.AddWithValue("@uniteID", uniteID);
+            komut = new System.Data.SqlClient.SqlCommand("select * from tblKonu");
+           // komut.Parameters.AddWithValue("@uniteID", uniteID);
             
             reader = veriTabani.liste(komut);
 

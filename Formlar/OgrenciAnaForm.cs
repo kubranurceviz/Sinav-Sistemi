@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using SinavSistemi.Formlar;
+using System;
 using System.Windows.Forms;
 
 namespace SinavSistemi
@@ -12,11 +8,11 @@ namespace SinavSistemi
     {
         Kullanici kullanici;
         Form T;
+        
         public OgrenciAnaForm(Kullanici kullanici)
         {
             InitializeComponent();
             this.kullanici = kullanici;
-            
         }
 
         private void buttonCikis_Click(object sender, EventArgs e)
@@ -30,10 +26,14 @@ namespace SinavSistemi
             labelSoyad.Visible = true;
             labelAd.Text = kullanici.ad;
             labelSoyad.Text = kullanici.soyAd;
+         
         }
 
+       
         private void buttonBasla_Click(object sender, EventArgs e)
         {
+           
+            buttonSonucEkran.Enabled = false;
             if (Application.OpenForms["SINAV"] != null)
             {
                 T = Application.OpenForms["SINAV"];
@@ -41,10 +41,45 @@ namespace SinavSistemi
             }
             else
             {
-                T = new SINAV();
+                T = new SINAV(kullanici);
                 T.MdiParent = this;
                 T.Show();
             }
+       
+            
+        }
+
+        private void buttonSonucEkran_Click(object sender, EventArgs e)
+        {
+         
+                if (Application.OpenForms["SonucEkran"] != null)
+                {
+                    T = Application.OpenForms["SonucEkran"];
+                    T.Focus();
+                }
+                else
+                {
+                    T = new SonucEkran(kullanici);
+                    T.MdiParent = this;
+                    T.Show();
+                }
+           
+        }
+
+        
+
+  
+
+        private void panelOgrAnaFrm_MouseMove(object sender, MouseEventArgs e)
+        {
+            foreach (Control control in panelOgrAnaFrm.Controls)
+            {
+                if (Application.OpenForms["SINAV"] == null)
+                {
+                    buttonSonucEkran.Enabled = true;
+                }
+            }
+
         }
     }
 }
