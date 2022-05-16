@@ -18,7 +18,7 @@ namespace SinavSistemi
             this.kullanici = kullanici;
         }
 
-        
+
         private void SinavSorumlusu_Load(object sender, EventArgs e)
         {
             labelAd.Text = kullanici.ad;
@@ -46,19 +46,5 @@ namespace SinavSistemi
             }
         }
 
-        private void buttonSoruListele_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms["SoruListele"] != null)
-            {
-                T = Application.OpenForms["SoruListele"];
-                T.Focus();
-            }
-            else
-            {
-                T = new SoruListele();
-                T.MdiParent = this;
-                T.Show();
-            }
-        }
     }
 }

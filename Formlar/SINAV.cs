@@ -1,7 +1,12 @@
-﻿using System;
-using System.Collections;
+﻿using SinavSistemi.Formlar;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SinavSistemi
@@ -11,21 +16,58 @@ namespace SinavSistemi
         BLL bLL;
         Soru soru = new Soru();
         Kullanici kullanici;
-   
+        Test test = new Test();
+        OgrenciAnaForm oaf; 
+
         List<Soru> CozulenSorular=new List<Soru>();
         public SINAV(Kullanici kullanici)
         {
             InitializeComponent();
             bLL = new BLL();
             this.kullanici = kullanici;
-          
+            oaf = new OgrenciAnaForm(kullanici);
         }
+        private void buttonBasla_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            dakika = test.soruSayisi;
+            lblDakika.Text = "--";
+            lblSaniye.Text = "--";
+            lblDakika.Text = ":";
+        }
+        private void timer1_Tick(object sender, EventArgs e)
 
+        {
+            timer1.Interval = 100;
+
+            saniye = saniye - 1;
+            lblSaniye.Text = Convert.ToString(saniye);
+            lblDakika.Text = Convert.ToString(dakika - 1);
+            if (saniye == 0)
+            {
+
+                dakika = dakika - 1;
+                lblDakika.Text = Convert.ToString(dakika);
+                saniye = 60;
+            }
+
+            if (lblDakika.Text == "-1")
+            {
+                timer1.Stop();
+                lblDakika.Text = "00";
+                lblSaniye.Text = "00";
+
+            }
+            lblDakika.Text = " ";
+            lblSaniye.Text = " ";
+            lbl.Text = " ";
+        }
         private void SINAV_Load(object sender, EventArgs e)
         {
             bLL.deneme(kullanici.kullaniciID);
         }
-
+        int saniye = 60;
+        int dakika = 0;
         int sayac = 0;
         int sayi = 0;
         private void buttonNext_Click(object sender, EventArgs e)
@@ -43,12 +85,7 @@ namespace SinavSistemi
                     soruGoster();
                 }
 
-               /* else if (sayac == bLL.testSorular.Count - 1)
-                {
-                    soruGoster();
-                    buttonNext.Text = "Testi Bitir";
-                   
-                }*/
+               
                 else
                 {
                   sayi += bLL.CozulenSoru(kullanici.kullaniciID, CozulenSorular);

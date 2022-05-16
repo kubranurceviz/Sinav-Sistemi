@@ -35,6 +35,7 @@
             this.labelSifre = new System.Windows.Forms.Label();
             this.buttonGoster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.buttoncikis = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -44,7 +45,7 @@
             // 
             // textBoxmail
             // 
-            this.textBoxmail.BackColor = System.Drawing.Color.Red;
+            this.textBoxmail.BackColor = System.Drawing.Color.AliceBlue;
             this.textBoxmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxmail.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxmail.ForeColor = System.Drawing.Color.Gray;
@@ -57,7 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Firebrick;
+            this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Location = new System.Drawing.Point(65, 134);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 1);
@@ -86,9 +87,10 @@
             // 
             // buttonGoster
             // 
-            this.buttonGoster.BackColor = System.Drawing.Color.Snow;
+            this.buttonGoster.BackColor = System.Drawing.Color.White;
             this.buttonGoster.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGoster.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonGoster.ForeColor = System.Drawing.Color.Black;
             this.buttonGoster.Location = new System.Drawing.Point(65, 157);
             this.buttonGoster.Name = "buttonGoster";
             this.buttonGoster.Size = new System.Drawing.Size(107, 27);
@@ -99,7 +101,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.buttoncikis);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -107,9 +110,17 @@
             this.panel2.Size = new System.Drawing.Size(391, 22);
             this.panel2.TabIndex = 5;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Navy;
+            this.panel6.Location = new System.Drawing.Point(20, 12);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(320, 1);
+            this.panel6.TabIndex = 2;
+            // 
             // buttoncikis
             // 
-            this.buttoncikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttoncikis.BackColor = System.Drawing.Color.White;
             this.buttoncikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttoncikis.BackgroundImage")));
             this.buttoncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttoncikis.Dock = System.Windows.Forms.DockStyle.Right;
@@ -123,7 +134,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel3.BackColor = System.Drawing.Color.Navy;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 301);
             this.panel3.Name = "panel3";
@@ -147,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(391, 306);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -179,5 +190,6 @@
         private System.Windows.Forms.Button buttoncikis;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel panel6;
     }
 }

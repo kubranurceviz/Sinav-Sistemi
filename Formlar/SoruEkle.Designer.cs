@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoruEkle));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.buttonKapat = new System.Windows.Forms.Button();
             this.textBoxDogruSecenek = new System.Windows.Forms.TextBox();
             this.textBoxYanlis1 = new System.Windows.Forms.TextBox();
@@ -43,19 +44,18 @@
             this.textBoxYanlis3 = new System.Windows.Forms.TextBox();
             this.textBoxMetin = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.textResimEkle = new System.Windows.Forms.TextBox();
             this.linkLabelResim = new System.Windows.Forms.LinkLabel();
             this.openFileDialogResim1 = new System.Windows.Forms.OpenFileDialog();
             this.panel9 = new System.Windows.Forms.Panel();
             this.buttonKaydet = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,7 +64,8 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Red;
+            this.panel4.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.buttonKapat);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -72,9 +73,17 @@
             this.panel4.Size = new System.Drawing.Size(880, 23);
             this.panel4.TabIndex = 3;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Navy;
+            this.panel10.Location = new System.Drawing.Point(30, 11);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(821, 1);
+            this.panel10.TabIndex = 2;
+            // 
             // buttonKapat
             // 
-            this.buttonKapat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonKapat.BackColor = System.Drawing.Color.White;
             this.buttonKapat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKapat.BackgroundImage")));
             this.buttonKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonKapat.Dock = System.Windows.Forms.DockStyle.Right;
@@ -88,9 +97,9 @@
             // 
             // textBoxDogruSecenek
             // 
-            this.textBoxDogruSecenek.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxDogruSecenek.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxDogruSecenek.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxDogruSecenek.ForeColor = System.Drawing.Color.Gold;
+            this.textBoxDogruSecenek.ForeColor = System.Drawing.Color.Black;
             this.textBoxDogruSecenek.Location = new System.Drawing.Point(335, 45);
             this.textBoxDogruSecenek.Name = "textBoxDogruSecenek";
             this.textBoxDogruSecenek.Size = new System.Drawing.Size(327, 22);
@@ -100,9 +109,9 @@
             // 
             // textBoxYanlis1
             // 
-            this.textBoxYanlis1.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxYanlis1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxYanlis1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxYanlis1.ForeColor = System.Drawing.Color.DarkRed;
+            this.textBoxYanlis1.ForeColor = System.Drawing.Color.Black;
             this.textBoxYanlis1.Location = new System.Drawing.Point(383, 102);
             this.textBoxYanlis1.Name = "textBoxYanlis1";
             this.textBoxYanlis1.Size = new System.Drawing.Size(303, 22);
@@ -112,9 +121,9 @@
             // 
             // textBoxYanlis2
             // 
-            this.textBoxYanlis2.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxYanlis2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxYanlis2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxYanlis2.ForeColor = System.Drawing.Color.DarkRed;
+            this.textBoxYanlis2.ForeColor = System.Drawing.Color.Black;
             this.textBoxYanlis2.Location = new System.Drawing.Point(383, 156);
             this.textBoxYanlis2.Name = "textBoxYanlis2";
             this.textBoxYanlis2.Size = new System.Drawing.Size(303, 22);
@@ -124,7 +133,7 @@
             // 
             // comboBoxUnite
             // 
-            this.comboBoxUnite.BackColor = System.Drawing.Color.Orange;
+            this.comboBoxUnite.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxUnite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxUnite.FormattingEnabled = true;
             this.comboBoxUnite.Location = new System.Drawing.Point(112, 35);
@@ -135,7 +144,7 @@
             // 
             // comboBoxKonu
             // 
-            this.comboBoxKonu.BackColor = System.Drawing.Color.Orange;
+            this.comboBoxKonu.BackColor = System.Drawing.SystemColors.Window;
             this.comboBoxKonu.Enabled = false;
             this.comboBoxKonu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxKonu.FormattingEnabled = true;
@@ -143,12 +152,12 @@
             this.comboBoxKonu.Name = "comboBoxKonu";
             this.comboBoxKonu.Size = new System.Drawing.Size(193, 30);
             this.comboBoxKonu.TabIndex = 7;
-         
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(39, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 22);
@@ -158,7 +167,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(39, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 22);
@@ -168,7 +178,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(14, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 22);
@@ -177,7 +188,7 @@
             // 
             // textBoxSoruID
             // 
-            this.textBoxSoruID.BackColor = System.Drawing.Color.Orange;
+            this.textBoxSoruID.BackColor = System.Drawing.Color.AliceBlue;
             this.textBoxSoruID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxSoruID.Location = new System.Drawing.Point(112, 146);
             this.textBoxSoruID.Name = "textBoxSoruID";
@@ -189,22 +200,22 @@
             // 
             // textBoxYanlis3
             // 
-            this.textBoxYanlis3.BackColor = System.Drawing.Color.SteelBlue;
+            this.textBoxYanlis3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxYanlis3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxYanlis3.ForeColor = System.Drawing.Color.DarkRed;
+            this.textBoxYanlis3.ForeColor = System.Drawing.Color.Black;
             this.textBoxYanlis3.Location = new System.Drawing.Point(383, 211);
             this.textBoxYanlis3.Name = "textBoxYanlis3";
             this.textBoxYanlis3.Size = new System.Drawing.Size(303, 22);
             this.textBoxYanlis3.TabIndex = 5;
-            this.textBoxYanlis3.Text = "yablış seçenek";
+            this.textBoxYanlis3.Text = "yanlış seçenek";
             this.textBoxYanlis3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMetin_MouseClick);
             // 
             // textBoxMetin
             // 
-            this.textBoxMetin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.textBoxMetin.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxMetin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxMetin.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxMetin.Location = new System.Drawing.Point(25, 28);
+            this.textBoxMetin.ForeColor = System.Drawing.Color.White;
+            this.textBoxMetin.Location = new System.Drawing.Point(25, 19);
             this.textBoxMetin.Multiline = true;
             this.textBoxMetin.Name = "textBoxMetin";
             this.textBoxMetin.Size = new System.Drawing.Size(272, 235);
@@ -214,8 +225,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Orange;
-            this.groupBox1.Controls.Add(this.panel7);
+            this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxSoruID);
             this.groupBox1.Controls.Add(this.comboBoxUnite);
@@ -229,17 +239,9 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Yellow;
-            this.panel7.Location = new System.Drawing.Point(112, 181);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(90, 1);
-            this.panel7.TabIndex = 11;
-            // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.SteelBlue;
+            this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Controls.Add(this.panel2);
@@ -258,7 +260,8 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Red;
+            this.panel5.BackColor = System.Drawing.Color.Navy;
+            this.panel5.ForeColor = System.Drawing.Color.Black;
             this.panel5.Location = new System.Drawing.Point(383, 253);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(351, 1);
@@ -266,7 +269,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.BackColor = System.Drawing.Color.Navy;
+            this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(383, 137);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(351, 1);
@@ -274,7 +278,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.BackColor = System.Drawing.Color.Navy;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(383, 191);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(351, 1);
@@ -282,7 +287,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Lime;
+            this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(335, 77);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(351, 1);
@@ -290,8 +296,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox3.Controls.Add(this.panel6);
+            this.groupBox3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox3.Controls.Add(this.textResimEkle);
             this.groupBox3.Controls.Add(this.linkLabelResim);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -300,14 +305,6 @@
             this.groupBox3.Size = new System.Drawing.Size(355, 195);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Yellow;
-            this.panel6.Location = new System.Drawing.Point(28, 146);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(311, 1);
-            this.panel6.TabIndex = 2;
             // 
             // textResimEkle
             // 
@@ -319,7 +316,7 @@
             // linkLabelResim
             // 
             this.linkLabelResim.AutoSize = true;
-            this.linkLabelResim.LinkColor = System.Drawing.Color.LawnGreen;
+            this.linkLabelResim.LinkColor = System.Drawing.Color.Black;
             this.linkLabelResim.Location = new System.Drawing.Point(21, 43);
             this.linkLabelResim.Name = "linkLabelResim";
             this.linkLabelResim.Size = new System.Drawing.Size(128, 22);
@@ -334,18 +331,18 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel9.Location = new System.Drawing.Point(836, 29);
+            this.panel9.BackColor = System.Drawing.Color.Navy;
+            this.panel9.Location = new System.Drawing.Point(867, 32);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(2, 598);
+            this.panel9.Size = new System.Drawing.Size(1, 580);
             this.panel9.TabIndex = 14;
             // 
             // buttonKaydet
             // 
-            this.buttonKaydet.BackColor = System.Drawing.Color.Lime;
+            this.buttonKaydet.BackColor = System.Drawing.Color.LightSkyBlue;
             this.buttonKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKaydet.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonKaydet.ForeColor = System.Drawing.Color.OrangeRed;
+            this.buttonKaydet.ForeColor = System.Drawing.Color.Black;
             this.buttonKaydet.Location = new System.Drawing.Point(196, 567);
             this.buttonKaydet.Name = "buttonKaydet";
             this.buttonKaydet.Size = new System.Drawing.Size(446, 44);
@@ -354,12 +351,22 @@
             this.buttonKaydet.UseVisualStyleBackColor = false;
             this.buttonKaydet.Click += new System.EventHandler(this.buttonKaydet_Click);
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Navy;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 634);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(880, 5);
+            this.panel8.TabIndex = 16;
+            // 
             // SoruEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(880, 639);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.buttonKaydet);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.groupBox3);
@@ -405,13 +412,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonKapat;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textResimEkle;
         private System.Windows.Forms.LinkLabel linkLabelResim;
         private System.Windows.Forms.OpenFileDialog openFileDialogResim1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button buttonKaydet;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel10;
     }
 }

@@ -34,7 +34,6 @@
             this.buttonCikis = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelAd = new System.Windows.Forms.Label();
-            this.buttonSoruListele = new System.Windows.Forms.Button();
             this.btnSoruEkle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,11 +53,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Controls.Add(this.buttonCikis);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labelAd);
-            this.panel1.Controls.Add(this.buttonSoruListele);
             this.panel1.Controls.Add(this.labelSoyad);
             this.panel1.Controls.Add(this.btnSoruEkle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -69,9 +67,9 @@
             // 
             // buttonCikis
             // 
-            this.buttonCikis.BackColor = System.Drawing.Color.Red;
+            this.buttonCikis.BackColor = System.Drawing.Color.AliceBlue;
             this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCikis.Location = new System.Drawing.Point(0, 443);
+            this.buttonCikis.Location = new System.Drawing.Point(0, 385);
             this.buttonCikis.Name = "buttonCikis";
             this.buttonCikis.Size = new System.Drawing.Size(261, 52);
             this.buttonCikis.TabIndex = 0;
@@ -100,21 +98,9 @@
             this.labelAd.TabIndex = 1;
             this.labelAd.Text = "ad";
             // 
-            // buttonSoruListele
-            // 
-            this.buttonSoruListele.BackColor = System.Drawing.Color.Blue;
-            this.buttonSoruListele.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSoruListele.Location = new System.Drawing.Point(0, 385);
-            this.buttonSoruListele.Name = "buttonSoruListele";
-            this.buttonSoruListele.Size = new System.Drawing.Size(261, 52);
-            this.buttonSoruListele.TabIndex = 0;
-            this.buttonSoruListele.Text = "SORU LİSTELE";
-            this.buttonSoruListele.UseVisualStyleBackColor = false;
-            this.buttonSoruListele.Click += new System.EventHandler(this.buttonSoruListele_Click);
-            // 
             // btnSoruEkle
             // 
-            this.btnSoruEkle.BackColor = System.Drawing.Color.Yellow;
+            this.btnSoruEkle.BackColor = System.Drawing.Color.AliceBlue;
             this.btnSoruEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSoruEkle.Location = new System.Drawing.Point(0, 327);
             this.btnSoruEkle.Name = "btnSoruEkle";
@@ -154,7 +140,6 @@
         private System.Windows.Forms.Label labelAd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonCikis;
-        private System.Windows.Forms.Button buttonSoruListele;
         private System.Windows.Forms.Button btnSoruEkle;
     }
 }

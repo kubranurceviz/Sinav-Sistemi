@@ -78,7 +78,7 @@
             // 
             // groupBoxGiris
             // 
-            this.groupBoxGiris.BackColor = System.Drawing.Color.OrangeRed;
+            this.groupBoxGiris.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBoxGiris.Controls.Add(this.linkLabelSifre);
             this.groupBoxGiris.Controls.Add(this.buttonGiris);
             this.groupBoxGiris.Controls.Add(panel2);
@@ -89,7 +89,7 @@
             this.groupBoxGiris.Controls.Add(this.pictureBox1);
             this.groupBoxGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBoxGiris.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxGiris.ForeColor = System.Drawing.Color.GreenYellow;
+            this.groupBoxGiris.ForeColor = System.Drawing.Color.Black;
             this.groupBoxGiris.Location = new System.Drawing.Point(38, 60);
             this.groupBoxGiris.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBoxGiris.Name = "groupBoxGiris";
@@ -104,9 +104,10 @@
             // 
             this.linkLabelSifre.AutoSize = true;
             this.linkLabelSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.linkLabelSifre.DisabledLinkColor = System.Drawing.Color.Black;
             this.linkLabelSifre.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.linkLabelSifre.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabelSifre.LinkColor = System.Drawing.Color.LightSeaGreen;
+            this.linkLabelSifre.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.linkLabelSifre.LinkColor = System.Drawing.Color.Teal;
             this.linkLabelSifre.Location = new System.Drawing.Point(21, 477);
             this.linkLabelSifre.Name = "linkLabelSifre";
             this.linkLabelSifre.Size = new System.Drawing.Size(188, 25);
@@ -117,9 +118,10 @@
             // 
             // buttonGiris
             // 
+            this.buttonGiris.BackColor = System.Drawing.Color.AliceBlue;
             this.buttonGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGiris.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonGiris.ForeColor = System.Drawing.Color.GreenYellow;
+            this.buttonGiris.ForeColor = System.Drawing.Color.Black;
             this.buttonGiris.Location = new System.Drawing.Point(126, 278);
             this.buttonGiris.Name = "buttonGiris";
             this.buttonGiris.Size = new System.Drawing.Size(202, 50);
@@ -138,7 +140,7 @@
             // 
             // textSifre
             // 
-            this.textSifre.BackColor = System.Drawing.Color.OrangeRed;
+            this.textSifre.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textSifre.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textSifre.ForeColor = System.Drawing.Color.Gray;
@@ -151,7 +153,7 @@
             // 
             // textKullaniciAd
             // 
-            this.textKullaniciAd.BackColor = System.Drawing.Color.OrangeRed;
+            this.textKullaniciAd.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textKullaniciAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textKullaniciAd.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textKullaniciAd.ForeColor = System.Drawing.Color.Gray;
@@ -184,7 +186,7 @@
             // 
             // groupBoxKaydol
             // 
-            this.groupBoxKaydol.BackColor = System.Drawing.Color.GreenYellow;
+            this.groupBoxKaydol.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBoxKaydol.Controls.Add(this.buttonKaydol);
             this.groupBoxKaydol.Controls.Add(this.radioBtnAdmin);
             this.groupBoxKaydol.Controls.Add(this.radioButtonSSorumlu);
@@ -201,7 +203,7 @@
             this.groupBoxKaydol.Controls.Add(this.textKaydolKullanici);
             this.groupBoxKaydol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBoxKaydol.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBoxKaydol.ForeColor = System.Drawing.Color.OrangeRed;
+            this.groupBoxKaydol.ForeColor = System.Drawing.Color.Black;
             this.groupBoxKaydol.Location = new System.Drawing.Point(543, 60);
             this.groupBoxKaydol.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBoxKaydol.Name = "groupBoxKaydol";
@@ -213,11 +215,11 @@
             // 
             // buttonKaydol
             // 
-            this.buttonKaydol.BackColor = System.Drawing.Color.GreenYellow;
+            this.buttonKaydol.BackColor = System.Drawing.Color.AliceBlue;
             this.buttonKaydol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonKaydol.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonKaydol.ForeColor = System.Drawing.Color.OrangeRed;
-            this.buttonKaydol.Location = new System.Drawing.Point(119, 421);
+            this.buttonKaydol.ForeColor = System.Drawing.Color.Black;
+            this.buttonKaydol.Location = new System.Drawing.Point(116, 416);
             this.buttonKaydol.Name = "buttonKaydol";
             this.buttonKaydol.Size = new System.Drawing.Size(240, 49);
             this.buttonKaydol.TabIndex = 9;
@@ -230,7 +232,7 @@
             this.radioBtnAdmin.AutoSize = true;
             this.radioBtnAdmin.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioBtnAdmin.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioBtnAdmin.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.radioBtnAdmin.ForeColor = System.Drawing.Color.Black;
             this.radioBtnAdmin.Location = new System.Drawing.Point(301, 314);
             this.radioBtnAdmin.Name = "radioBtnAdmin";
             this.radioBtnAdmin.Size = new System.Drawing.Size(75, 73);
@@ -244,7 +246,7 @@
             this.radioButtonSSorumlu.AutoSize = true;
             this.radioButtonSSorumlu.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButtonSSorumlu.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonSSorumlu.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.radioButtonSSorumlu.ForeColor = System.Drawing.Color.Black;
             this.radioButtonSSorumlu.Location = new System.Drawing.Point(174, 291);
             this.radioButtonSSorumlu.Name = "radioButtonSSorumlu";
             this.radioButtonSSorumlu.Size = new System.Drawing.Size(121, 119);
@@ -258,7 +260,7 @@
             this.radioButtonOgr.AutoSize = true;
             this.radioButtonOgr.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButtonOgr.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonOgr.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.radioButtonOgr.ForeColor = System.Drawing.Color.Black;
             this.radioButtonOgr.Location = new System.Drawing.Point(81, 314);
             this.radioButtonOgr.Name = "radioButtonOgr";
             this.radioButtonOgr.Size = new System.Drawing.Size(87, 73);
@@ -309,7 +311,7 @@
             // 
             // textKaydolSifre
             // 
-            this.textKaydolSifre.BackColor = System.Drawing.Color.GreenYellow;
+            this.textKaydolSifre.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textKaydolSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textKaydolSifre.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textKaydolSifre.ForeColor = System.Drawing.Color.Gray;
@@ -322,7 +324,7 @@
             // 
             // textBoxSoyad
             // 
-            this.textBoxSoyad.BackColor = System.Drawing.Color.GreenYellow;
+            this.textBoxSoyad.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSoyad.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxSoyad.ForeColor = System.Drawing.Color.Gray;
@@ -335,7 +337,7 @@
             // 
             // textBoxAd
             // 
-            this.textBoxAd.BackColor = System.Drawing.Color.GreenYellow;
+            this.textBoxAd.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxAd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxAd.ForeColor = System.Drawing.SystemColors.GrayText;
@@ -348,7 +350,7 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.GreenYellow;
+            this.textBoxEmail.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxEmail.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxEmail.ForeColor = System.Drawing.SystemColors.GrayText;
@@ -361,7 +363,7 @@
             // 
             // textKaydolKullanici
             // 
-            this.textKaydolKullanici.BackColor = System.Drawing.Color.GreenYellow;
+            this.textKaydolKullanici.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textKaydolKullanici.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textKaydolKullanici.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textKaydolKullanici.ForeColor = System.Drawing.Color.Gray;
@@ -383,7 +385,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Navy;
+            this.panel9.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.buttonCikis);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
@@ -391,10 +393,11 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1046, 30);
             this.panel9.TabIndex = 3;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.Red;
+            this.panel10.BackColor = System.Drawing.Color.Navy;
             this.panel10.Location = new System.Drawing.Point(78, 12);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(821, 1);
@@ -402,7 +405,7 @@
             // 
             // buttonCikis
             // 
-            this.buttonCikis.BackColor = System.Drawing.Color.Navy;
+            this.buttonCikis.BackColor = System.Drawing.Color.White;
             this.buttonCikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCikis.BackgroundImage")));
             this.buttonCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonCikis.Dock = System.Windows.Forms.DockStyle.Right;
@@ -437,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1046, 631);
             this.Controls.Add(this.panel12);

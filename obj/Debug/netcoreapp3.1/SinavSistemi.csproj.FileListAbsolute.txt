@@ -54,3 +54,33 @@ D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SoruListele.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.OgrenciAnaForm.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.SINAV.resources
 D:\Sinav-Sistemi\obj\Debug\netcoreapp3.1\SinavSistemi.Formlar.SonucEkran.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.exe
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.deps.json
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.runtimeconfig.json
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.runtimeconfig.dev.json
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\SinavSistemi.pdb
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.csproj.AssemblyReference.cache
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.LOGIN.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.OgrenciAnaForm.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.Sifre.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.SINAV.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.SinavSorumlusu.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.Formlar.SonucEkran.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.SoruEkle.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.Properties.Resources.resources
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.csproj.GenerateResource.cache
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.AssemblyInfoInputs.cache
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.AssemblyInfo.cs
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.csproj.CoreCompileInputs.cache
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.csproj.CopyComplete
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.dll
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.pdb
+C:\Users\Kübra Nur Ceviz\OneDrive\Masaüstü\Yeni klasör\obj\Debug\netcoreapp3.1\SinavSistemi.genruntimeconfig.cache

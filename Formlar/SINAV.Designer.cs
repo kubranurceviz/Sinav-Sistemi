@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SINAV));
             this.buttonNext = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,18 +41,27 @@
             this.labelSoruNo = new System.Windows.Forms.Label();
             this.buttonCikis = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblDakika = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblSaniye = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonNext
             // 
+            this.buttonNext.BackColor = System.Drawing.Color.White;
             this.buttonNext.Location = new System.Drawing.Point(706, 562);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(172, 47);
             this.buttonNext.TabIndex = 1;
             this.buttonNext.Text = "Sonraki";
-            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.UseVisualStyleBackColor = false;
             this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // label1
@@ -159,7 +169,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.buttonCikis);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -167,11 +178,84 @@
             this.panel1.Size = new System.Drawing.Size(918, 26);
             this.panel1.TabIndex = 5;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Navy;
+            this.panel10.Location = new System.Drawing.Point(49, 13);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(821, 1);
+            this.panel10.TabIndex = 2;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel12.Location = new System.Drawing.Point(887, 55);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1, 557);
+            this.panel12.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel2.Location = new System.Drawing.Point(12, 55);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1, 557);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Navy;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 650);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(918, 5);
+            this.panel8.TabIndex = 8;
+            // 
+            // lblDakika
+            // 
+            this.lblDakika.AutoSize = true;
+            this.lblDakika.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDakika.Location = new System.Drawing.Point(759, 82);
+            this.lblDakika.Name = "lblDakika";
+            this.lblDakika.Size = new System.Drawing.Size(35, 33);
+            this.lblDakika.TabIndex = 9;
+            this.lblDakika.Text = "--";
+            this.lblDakika.Visible = false;
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl.Location = new System.Drawing.Point(791, 82);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(24, 33);
+            this.lbl.TabIndex = 10;
+            this.lbl.Text = ":";
+            this.lbl.Visible = false;
+            // 
+            // lblSaniye
+            // 
+            this.lblSaniye.AutoSize = true;
+            this.lblSaniye.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSaniye.Location = new System.Drawing.Point(810, 82);
+            this.lblSaniye.Name = "lblSaniye";
+            this.lblSaniye.Size = new System.Drawing.Size(35, 33);
+            this.lblSaniye.TabIndex = 11;
+            this.lblSaniye.Text = "--";
+            this.lblSaniye.Visible = false;
+            // 
             // SINAV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(918, 655);
+            this.Controls.Add(this.lblSaniye);
+            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.lblDakika);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -208,5 +292,13 @@
         private System.Windows.Forms.Label labelSoruNo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonCikis;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblDakika;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblSaniye;
     }
 }

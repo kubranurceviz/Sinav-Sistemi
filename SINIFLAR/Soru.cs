@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SinavSistemi
 {
-    public class Soru: ISoru
+    public class Soru
     {
         public int soruID { get; set; }
         public string soruMetni { get; set; }
