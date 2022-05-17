@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SINAV));
             this.buttonNext = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,10 +44,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblDakika = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblSaniye = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -215,34 +211,12 @@
             // 
             this.lblDakika.AutoSize = true;
             this.lblDakika.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDakika.Location = new System.Drawing.Point(759, 82);
+            this.lblDakika.Location = new System.Drawing.Point(706, 67);
             this.lblDakika.Name = "lblDakika";
             this.lblDakika.Size = new System.Drawing.Size(35, 33);
             this.lblDakika.TabIndex = 9;
             this.lblDakika.Text = "--";
             this.lblDakika.Visible = false;
-            // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl.Location = new System.Drawing.Point(791, 82);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(24, 33);
-            this.lbl.TabIndex = 10;
-            this.lbl.Text = ":";
-            this.lbl.Visible = false;
-            // 
-            // lblSaniye
-            // 
-            this.lblSaniye.AutoSize = true;
-            this.lblSaniye.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSaniye.Location = new System.Drawing.Point(810, 82);
-            this.lblSaniye.Name = "lblSaniye";
-            this.lblSaniye.Size = new System.Drawing.Size(35, 33);
-            this.lblSaniye.TabIndex = 11;
-            this.lblSaniye.Text = "--";
-            this.lblSaniye.Visible = false;
             // 
             // SINAV
             // 
@@ -250,8 +224,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(918, 655);
-            this.Controls.Add(this.lblSaniye);
-            this.Controls.Add(this.lbl);
             this.Controls.Add(this.lblDakika);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel2);
@@ -296,9 +268,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblDakika;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label lblSaniye;
     }
 }

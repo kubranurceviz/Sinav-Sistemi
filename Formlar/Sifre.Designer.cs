@@ -170,6 +170,7 @@
             this.Controls.Add(this.textBoxmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sifre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sifre";
             this.Load += new System.EventHandler(this.Sifre_Load);
             this.panel2.ResumeLayout(false);

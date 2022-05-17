@@ -16,8 +16,7 @@ namespace SinavSistemi
         BLL bLL;
         Soru soru = new Soru();
         Kullanici kullanici;
-        Test test = new Test();
-        OgrenciAnaForm oaf; 
+        Timer timer;
 
         List<Soru> CozulenSorular=new List<Soru>();
         public SINAV(Kullanici kullanici)
@@ -25,70 +24,48 @@ namespace SinavSistemi
             InitializeComponent();
             bLL = new BLL();
             this.kullanici = kullanici;
-            oaf = new OgrenciAnaForm(kullanici);
         }
-        private void buttonBasla_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-            dakika = test.soruSayisi;
-            lblDakika.Text = "--";
-            lblSaniye.Text = "--";
-            lblDakika.Text = ":";
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-
-        {
-            timer1.Interval = 100;
-
-            saniye = saniye - 1;
-            lblSaniye.Text = Convert.ToString(saniye);
-            lblDakika.Text = Convert.ToString(dakika - 1);
-            if (saniye == 0)
-            {
-
-                dakika = dakika - 1;
-                lblDakika.Text = Convert.ToString(dakika);
-                saniye = 60;
-            }
-
-            if (lblDakika.Text == "-1")
-            {
-                timer1.Stop();
-                lblDakika.Text = "00";
-                lblSaniye.Text = "00";
-
-            }
-            lblDakika.Text = " ";
-            lblSaniye.Text = " ";
-            lbl.Text = " ";
-        }
+ 
         private void SINAV_Load(object sender, EventArgs e)
         {
-            bLL.deneme(kullanici.kullaniciID);
+            bLL.SoruAyarla(kullanici.kullaniciID);
         }
-        int saniye = 60;
+        int saniye = 0;
         int dakika = 0;
         int sayac = 0;
-        int sayi = 0;
+
+     
         private void buttonNext_Click(object sender, EventArgs e)
         {
+            if(sayac==0)
+            {
+                dakika = bLL.testSorular.Count-1;
+                timer = new Timer();
+                timer.Tick += Timer_Tick;
+                timer.Interval = 1000;
+                saniye = 60;
+                timer.Start();
+
+            }
+
              buttonNext.Location = new System.Drawing.Point(670, 547);
              buttonNext.Size = new System.Drawing.Size(150, 50);
              buttonNext.Text = "Sonraki";
              kontrolDonguleri(true);
              panel1.Visible = true;
              buttonCikis.Visible = true;
-            
 
-                if (sayac < bLL.testSorular.Count)
+            int sayi = 0;
+            if (sayac < bLL.testSorular.Count)
                 {
                     soruGoster();
                 }
 
-               
                 else
                 {
-                  sayi += bLL.CozulenSoru(kullanici.kullaniciID, CozulenSorular);
+                    timer.Dispose();
+                    timer.Stop();
+                   sayi += bLL.CozulenSoru(kullanici.kullaniciID, CozulenSorular);
                     if (sayi > 0)
                     {
                         kontrolDonguleri(false);
@@ -106,7 +83,37 @@ namespace SinavSistemi
             sayac++;
             
         }
-      
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            saniye--;
+            if(saniye<0)
+            {
+                dakika--;
+                saniye = 59;
+                
+            }
+
+            if(saniye<=0 && dakika<=0)
+            {
+                lblDakika.Text = $"{00} : {00}";
+                timer.Dispose();
+                timer.Stop();
+                timer.Dispose();
+                timer.Stop();
+
+               kontrolDonguleri(false);
+               labelKonum("SINAVINIZ GÖNDERİLEMEDİ!");
+           
+              
+            }
+            else
+            {
+                lblDakika.Text = $"{dakika}dk : {saniye}sn";
+            }
+            
+        }
+
         public void soruGoster()
         {
                 int[] diziSecenek = bLL.dizisira(4);

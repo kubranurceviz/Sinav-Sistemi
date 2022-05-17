@@ -49,7 +49,7 @@ namespace SinavSistemi
             return mesaj;
          
         }
-        public void deneme(int kullaniciID)
+        public void SoruAyarla(int kullaniciID)
         {
             List<Soru> SigmaSorular=new List<Soru>();
             Sorular = soruVeriTabani.SoruListesiGetir(kullaniciID);
